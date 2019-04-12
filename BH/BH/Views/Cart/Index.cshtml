@@ -1,0 +1,255 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="colorlib-logo">@Html.ActionLink("NPH STORE", "Index", "Home")</div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li>@Html.ActionLink("Trang Chủ", "Index", "Home")</li>
+                            <li class="has-dropdown">
+                                @Html.ActionLink("Cửa Hàng", "Index", "Store")
+                                <ul class="dropdown">
+                                    <li>@Html.ActionLink("Giỏ Hàng", "Index", "Cart")</li>
+                                    <li>@Html.ActionLink("Kiểm Tra", "Index", "Check")</li>
+                                    <li>@Html.ActionLink("Hoàn Thành", "Index", "Order")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Liên Hệ", "Index", "Contact")</li>
+                            <li><i class="icon-shopping-cart"></i>@Html.ActionLink("Giỏ Hàng[0]", "Index", "Cart")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside id="colorlib-hero" class="breadcrumbs">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(/Assets/Client/images/cover-img-1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner text-center">
+                                    <h1>Giỏ Hàng</h1>
+                                    <h2 class="bread"><span>@Html.ActionLink("Trang Chủ", "Index", "Home")</span> <span><a href="#">Sản Phẩm</a></span> <span>Giỏ Hàng</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="colorlib-shop">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="process-wrap">
+                        <div class="process text-center active">
+                            <p><span>01</span></p>
+                            @Html.ActionLink("Giỏ Hàng", "Index", "Cart")
+                        </div>
+                        <div class="process text-center">
+                            <p><span>02</span></p>
+                            @Html.ActionLink("Kiểm Tra", "Index", "Check")
+                        </div>
+                        <div class="process text-center">
+                            <p><span>03</span></p>
+                            @Html.ActionLink("Hoàn Thành", "Index", "Order")
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-pb-md">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="product-name">
+                        <div class="one-forth text-center">
+                            <span>Sản Phẩm Chi Tiết</span>
+                        </div>
+                        <div class="one-eight text-center">
+                            <span>Giá</span>
+                        </div>
+                        <div class="one-eight text-center">
+                            <span>Số Lượng</span>
+                        </div>
+                        <div class="one-eight text-center">
+                            <span>Thành Tiền</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="total-wrap">
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="total">
+
+                                    <div class="grand-total">
+                                        <p><span><strong>Tổng Tiền:</strong></span> <span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="colorlib-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center colorlib-heading">
+                    <h2><span>Sản Phẩm Mới</span></h2>
+                    <p>Nếu bạn tự thấy mình rất kém trong khoản phối màu sao cho nổi bật, năm nay bạn có thể quẳng gánh lo sang một bên bởi kiểu phối matchy-matchy tuyền một màu từ trên xuống dưới sẽ lên ngôi.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="product-entry">
+                        <div class="product-img" style="background-image: url(/Assets/Client/images/1.jpg);">
+                            <p class="tag"><span class="new">New</span></p>
+                            <div class="cart">
+                                <p>
+                                    <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="#">Sơ Mi Nam Q01</a></h3>
+                            <p class="price"><span>255,000 vnđ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="product-entry">
+                        <div class="product-img" style="background-image: url(/Assets/Client/images/ii3.jpg);">
+                            <p class="tag"><span class="new">New</span></p>
+                            <div class="cart">
+                                <p>
+                                    <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="#">Sơ Mi Nữ W01</a></h3>
+                            <p class="price"><span>260,000 vnđ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="product-entry">
+                        <div class="product-img" style="background-image: url(/Assets/Client/images/i1.jpg);">
+                            <p class="tag"><span class="new">New</span></p>
+                            <div class="cart">
+                                <p>
+                                    <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+                                    <
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="#">Áo Khoác Nam Dù E01</a></h3>
+                            <p class="price"><span>425,000 vnđ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="product-entry">
+                        <div class="product-img" style="background-image: url(/Assets/Client/images/q2.jpg);">
+                            <p class="tag"><span class="new">New</span></p>
+                            <div class="cart">
+                                <p>
+                                    <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <h3><a href="#">Áo Khoác Thun Nữ R01</a></h3>
+                            <p class="price"><span>285,000 vnđ</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="colorlib-subscribe">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-6 text-center">
+                        <h2><i class="icon-paperplane"></i>ĐĂNG KÝ NHẬN ƯU ĐÃI</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="form-inline qbstp-header-subscribe">
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                                        <button type="submit" class="btn btn-primary">Đăng kí</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="colorlib-footer" role="contentinfo">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-6 colorlib-widget">
+                    <h4>Về Store</h4>
+                    <p>NPH STORE cam kết chất lượng phục vụ tốt nhất, chuyên nghiệp nhất cho mọi khách hàng bằng chính sách hoàn tiền và tặng quà nếu nhân viên phục vụ quí khách không chu đáo.</p>
+                    <p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCTNMANN%2F&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </p>
+                </div>
+                
+
+                <div class="col-md-6">
+                    <h4>Thông Tin Liên Hệ</h4>
+                    <ul class="colorlib-footer-links">
+                        <li>Phường tăng nhơn phú A <br> Quận 9,Thành Phố Hồ Chí Minh</li>
+                        <li>
+                            <a href="tel:+84967882624">
+                                <div class="hotline">
+                                    <span class="before-hotline">Hotline:</span>
+                                    <span class="hotline-number">0967.88.26.24</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!--<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+                        <li><a href="#">yoursite.com</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+

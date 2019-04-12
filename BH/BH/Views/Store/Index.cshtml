@@ -1,0 +1,376 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="colorlib-logo">@Html.ActionLink("NPH STORE", "Index", "Home")</a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li>@Html.ActionLink("Trang Chủ", "Index", "Home")</li>
+                            <li class="has-dropdown">
+                                @Html.ActionLink("Cửa Hàng", "Index", "Store")
+                                <ul class="dropdown">
+                                    <li>@Html.ActionLink("Giỏ Hàng", "Index", "Cart")</li>
+                                    <li>@Html.ActionLink("Kiểm Tra", "Index", "Check")</li>
+                                    <li>@Html.ActionLink("Hoàn Thành", "Index", "Order")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Liên Hệ", "Index", "Contact")</li>
+                            <li><i class="icon-shopping-cart"></i>@Html.ActionLink("Giỏ Hàng[0]", "Index", "Cart")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside id="colorlib-hero" class="breadcrumbs">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(/Assets/Client/images/cover-img-1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner text-center">
+                                    <h1>Sản Phẩm</h1>
+                                    <h2 class="bread"><span>@Html.ActionLink("Trang Chủ", "Index", "Home")</span> <span>Cửa Hàng</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="colorlib-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-push-2">
+                    <div class="row row-pb-lg">
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/s1.jpg);">
+                                    <p class="tag"><span class="sale">Sale</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Áo Thun Nam M01</a></h3>
+                                    <p class="price"><span>150,000 vnđ</span> <span class="sale">200,000 vnđ</span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/1.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Sơ Mi Nam Q01</a></h3>
+                                    <p class="price"><span>255,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/ii3.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Sơ Mi Nữ W01</a></h3>
+                                    <p class="price"><span>260,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/i1.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Áo Khoác Nam Dù E01</a></h3>
+                                    <p class="price"><span>425,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/q2.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Áo Khoác Thun Nữ R01</a></h3>
+                                    <p class="price"><span>285,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/x1.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Giày Nam P01</a></h3>
+                                    <p class="price"><span>385,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/b1.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Giày Nữ B01</a></h3>
+                                    <p class="price"><span>280,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/o1.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Sơ Mi Nam No Style L01</a></h3>
+                                    <p class="price"><span>255,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/n11.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Áo Khoác Nam B01</a></h3>
+                                    <p class="price"><span>255,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/x2.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Giày Tuvi's A01</a></h3>
+                                    <p class="price"><span>275,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/d12.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Áo Thun Nữ Basic AX01</a></h3>
+                                    <p class="price"><span>150,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="product-entry">
+                                <div class="product-img" style="background-image: url(/Assets/Client/images/f21.jpg);">
+                                    <p class="tag"><span class="new">New</span></p>
+                                    <div class="cart">
+                                        <p>
+                                            <span class="addtocart"><a href="#"><i class="icon-shopping-cart"></i></a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3><a href="#">Áo Khoác Nữ Dù A05</a></h3>
+                                    <p class="price"><span>325,000 vnđ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--<ul class="pagination">
+                                <li class="disabled"><a href="#">&laquo;</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-pull-10">
+                    <div class="sidebar">
+                        <div class="side">
+                            <h2>Giới Tính</h2>
+                            <ul>
+                                <li>Nam</li>
+                                <li>Nữ</li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="side">
+                            <h2>Màu Sắc</h2>
+                            <div class="color-wrap">
+                                <p class="color-desc">
+                                    <a href="#" class="color color-1"></a>
+                                    <a href="#" class="color color-2"></a>
+                                    <a href="#" class="color color-3"></a>
+                                    <a href="#" class="color color-4"></a>
+                                    <a href="#" class="color color-5"></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="side">
+                            <h2>Size</h2>
+                            <div class="size-wrap">
+                                <p class="size-desc">
+                                    <a href="#" class="size size-1">xs</a>
+                                    <a href="#" class="size size-2">s</a>
+                                    <a href="#" class="size size-3">m</a>
+                                    <a href="#" class="size size-4">l</a>
+                                    <a href="#" class="size size-5">xl</a>
+                                    <a href="#" class="size size-5">xxl</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorlib-subscribe">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-6 text-center">
+                        <h2><i class="icon-paperplane"></i>ĐĂNG KÝ NHẬN ƯU ĐÃI</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="form-inline qbstp-header-subscribe">
+                            <div class="row">
+                                <div class="col-md-12 col-md-offset-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="Email của bạn">
+                                        <button type="submit" class="btn btn-primary">Đăng kí</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="colorlib-footer" role="contentinfo">
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-6 colorlib-widget">
+                    <h4>Về Store</h4>
+                    <p>NPH STORE cam kết chất lượng phục vụ tốt nhất, chuyên nghiệp nhất cho mọi khách hàng bằng chính sách hoàn tiền và tặng quà nếu nhân viên phục vụ quí khách không chu đáo.</p>
+                    <p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCTNMANN%2F&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>Thông Tin Liên Hệ</h4>
+                    <ul class="colorlib-footer-links">
+                        <li>Phường tăng nhơn phú A <br> Quận 9,Thành Phố Hồ Chí Minh</li>
+                        <li>
+                            <a href="tel:+84967882624">
+                                <div class="hotline">
+                                    <span class="before-hotline">Hotline:</span>
+                                    <span class="hotline-number">0967.88.26.24</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+

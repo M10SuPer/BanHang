@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="colorlib-logo">@Html.ActionLink("NPH STORE", "Index", "Home")</div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li>@Html.ActionLink("Trang Chủ", "Index", "Home")</li>
+                            <li class="has-dropdown">
+                                @Html.ActionLink("Cửa Hàng", "Index", "Store")
+                                <ul class="dropdown">
+                                    <li>@Html.ActionLink("Giỏ Hàng", "Index", "Cart")</li>
+                                    <li>@Html.ActionLink("Kiểm Tra", "Index", "Check")</li>
+                                    <li>@Html.ActionLink("Hoàn Thành", "Index", "Order")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Liên Hệ", "Index", "Contact")</li>
+                            <li><i class="icon-shopping-cart"></i>@Html.ActionLink("Giỏ Hàng[0]", "Index", "Cart")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside id="colorlib-hero" class="breadcrumbs">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(/Assets/Client/images/cover-img-1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner text-center">
+                                    <h1>Liên Hệ</h1>
+                                    <h2 class="bread"><span>@Html.ActionLink("Trang Chủ", "Index", "Home")</span> <span>Liên Hệ</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div id="colorlib-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <div class="row contact-info-wrap">
+                        <div class="col-md-3">
+                            <p><span><i class="icon-location"></i></span> Phường tăng nhơn phú A <br> Quận 9,Thành Phố Hồ Chí Minh</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>
+                                <span><i class="icon-phone3"></i></span> <a href="tel:+84967882624">0967.88.26.24</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="contact-wrap">
+                        <h3>Liên lạc</h3>
+                        <form action="#">
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="lname">Họ Và Tên</label>
+                                    <input type="text" id="lname" class="form-control" placeholder="Tên của bạn">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" class="form-control" placeholder="Địa chỉ email của bạn">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="subject">Chủ Đề</label>
+                                    <input type="text" id="subject" class="form-control" placeholder="Chủ đề của bạn trong tin nhắn này">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="message">Tin Nhắn</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Viết về chúng tôi cảm ơn"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" value="Send Message" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="map" class="colorlib-map"></div>-->
+
+    <div class="container">
+        <div class="row row-pb-md">
+            <div class="col-md-6 colorlib-widget">
+                <h4>Về Store</h4>
+                <p>NPH STORE cam kết chất lượng phục vụ tốt nhất, chuyên nghiệp nhất cho mọi khách hàng bằng chính sách hoàn tiền và tặng quà nếu nhân viên phục vụ quí khách không chu đáo.</p>
+                <p>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCTNMANN%2F&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Thông Tin Liên Hệ</h4>
+                <ul class="colorlib-footer-links">
+                    <li>Phường tăng nhơn phú A <br> Quận 9,Thành Phố Hồ Chí Minh</li>
+                    <li>
+                        <a href="tel:+84967882624">
+                            <div class="hotline">
+                                <span class="before-hotline">Hotline:</span>
+                                <span class="hotline-number">0967.88.26.24</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+</div>
+
